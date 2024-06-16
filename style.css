@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root, body{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #121321, #131421, #000);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rotate 1s linear forwards infinite;
+    padding: 0 0.5rem;
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+h1{
+    font-size: 6rem;
+    padding: 0.3em 0 0.5em 0;
+    color: transparent;
+    background: linear-gradient(135deg, lightBlue, cyan, lightGreen, orange, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    animation: rotate 0.5s linear forwards infinite;
+}
+@keyframes rotate{
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+.msg-box{
+    margin: 1rem 0;
+    display: none;
+}
+.btn{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ddd, #999);
+    padding: 0.4em 0.8em;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+}
+.btn:hover{
+    background: linear-gradient(135deg, #fff, #aaa, #eee, #ddd, #999);
+}
+p{
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+.boxes{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 60px);
+    columns: 10;
+    gap: 1rem;
+}
+.box{
+    background: linear-gradient(135deg, #999, #ddd);
+    cursor: pointer;
+    font-size: 3rem;
+    border: none;
+}
+.box:hover{
+    background: linear-gradient(-135deg, #999, #ddd);
+}
+.reset-game-btn{
+    margin: 2rem auto 3rem;
+}
